@@ -1,0 +1,605 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 22 14:02:20 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16568 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.api.PropertiesTC.DEL_09_valid_VerifyLogin.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.DEL_09_valid_VerifyLogin</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 405: FAILED expected [200] but found [405]
+	at com.api.PropertiesTC.DEL_09_valid_VerifyLogin.TC01_verifyStatusCode(DEL_09_valid_VerifyLogin.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1844518545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1844518545'><pre>java.lang.AssertionError: valid StatusCode 405: FAILED expected [200] but found [405]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.DEL_09_valid_VerifyLogin.TC01_verifyStatusCode(DEL_09_valid_VerifyLogin.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.PUT_04_to_Brands_List.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.PUT_04_to_Brands_List</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 405 Method NOT Allowed: FAILED expected [200] but found [405]
+	at com.api.PropertiesTC.PUT_04_to_Brands_List.TC01_verifyStatusCode(PUT_04_to_Brands_List.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985362663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985362663'><pre>java.lang.AssertionError: valid StatusCode 405 Method NOT Allowed: FAILED expected [200] but found [405]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.PUT_04_to_Brands_List.TC01_verifyStatusCode(PUT_04_to_Brands_List.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_06_invalid_SearchProduct.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_06_invalid_SearchProduct</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 400: FAILED expected [200] but found [400]
+	at com.api.PropertiesTC.POST_06_invalid_SearchProduct.TC01_verifyStatusCode(POST_06_invalid_SearchProduct.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace355977028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace355977028'><pre>java.lang.AssertionError: valid StatusCode 400: FAILED expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.POST_06_invalid_SearchProduct.TC01_verifyStatusCode(POST_06_invalid_SearchProduct.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_02_to_Product_List.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_02_to_Product_List</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 405 Method Not Allowed: FAILED! expected [200] but found [405]
+	at com.api.PropertiesTC.POST_02_to_Product_List.TC01_verifyStatusCode(POST_02_to_Product_List.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1384626783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1384626783'><pre>java.lang.AssertionError: valid StatusCode 405 Method Not Allowed: FAILED! expected [200] but found [405]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.POST_02_to_Product_List.TC01_verifyStatusCode(POST_02_to_Product_List.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_02_to_Product_List@3527942a</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_10_invalid_VerifyLogin.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_10_invalid_VerifyLogin</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 404: FAILED expected [200] but found [404]
+	at com.api.PropertiesTC.POST_10_invalid_VerifyLogin.TC01_verifyStatusCode(POST_10_invalid_VerifyLogin.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1479396661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1479396661'><pre>java.lang.AssertionError: valid StatusCode 404: FAILED expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.POST_10_invalid_VerifyLogin.TC01_verifyStatusCode(POST_10_invalid_VerifyLogin.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_08_invalid_VerifyLogin.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_08_invalid_VerifyLogin</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 400: FAILED expected [200] but found [400]
+	at com.api.PropertiesTC.POST_08_invalid_VerifyLogin.TC01_verifyStatusCode(POST_08_invalid_VerifyLogin.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace190245996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190245996'><pre>java.lang.AssertionError: valid StatusCode 400: FAILED expected [200] but found [400]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.POST_08_invalid_VerifyLogin.TC01_verifyStatusCode(POST_08_invalid_VerifyLogin.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_11_createAccount.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_11_createAccount</td>
+<td><div><pre>java.lang.AssertionError: valid StatusCode 201 Created: FAILED expected [200] but found [201]
+	at com.api.PropertiesTC.POST_11_createAccount.TC01_verifyStatusCode(POST_11_createAccount.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275477177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275477177'><pre>java.lang.AssertionError: valid StatusCode 201 Created: FAILED expected [200] but found [201]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.api.PropertiesTC.POST_11_createAccount.TC01_verifyStatusCode(POST_11_createAccount.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_11_createAccount@5e600dd5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.api.PropertiesTC.DEL_12_deleteUser.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.DEL_12_deleteUser</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC05_verifyProduct_price()'><b>TC05_verifyProduct_price</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_07_valid_VerifyLogin.TC03_verifyMessageField()'><b>TC03_verifyMessageField</b><br>Test class: com.api.PropertiesTC.POST_07_valid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_02_to_Product_List.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.POST_02_to_Product_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_02_to_Product_List@3527942a</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.PUT_04_to_Brands_List.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.PUT_04_to_Brands_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.PUT_13_updateAccount.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.PUT_13_updateAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.PUT_13_updateAccount@576d5deb</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.PUT_04_to_Brands_List.TC03_verifyMessageField()'><b>TC03_verifyMessageField</b><br>Test class: com.api.PropertiesTC.PUT_04_to_Brands_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_14_detailAccount.TC05_matchingEmailField()'><b>TC05_matchingEmailField</b><br>Test class: com.api.PropertiesTC.GET_14_detailAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_14_detailAccount@5d534f5d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.DEL_09_valid_VerifyLogin.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.DEL_09_valid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_08_invalid_VerifyLogin.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.POST_08_invalid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_03_Brands_List.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.GET_03_Brands_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_03_Brands_List@942a29c</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_06_invalid_SearchProduct.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.POST_06_invalid_SearchProduct</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_10_invalid_VerifyLogin.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.POST_10_invalid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_14_detailAccount.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.GET_14_detailAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_14_detailAccount@5d534f5d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC06_verifyProduct_brand()'><b>TC06_verifyProduct_brand</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_07_valid_VerifyLogin.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_07_valid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_08_invalid_VerifyLogin.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.POST_08_invalid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.DEL_12_deleteUser.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.DEL_12_deleteUser</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_07_valid_VerifyLogin.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.POST_07_valid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.DEL_12_deleteUser.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.DEL_12_deleteUser</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_05_valid_SearchProduct.TC02_validProduct_Name()'><b>TC02_validProduct_Name</b><br>Test class: com.api.PropertiesTC.POST_05_valid_SearchProduct</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.PUT_13_updateAccount.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.PUT_13_updateAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.PUT_13_updateAccount@576d5deb</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_14_detailAccount.TC04_matchingPassField()'><b>TC04_matchingPassField</b><br>Test class: com.api.PropertiesTC.GET_14_detailAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_14_detailAccount@5d534f5d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_03_Brands_List.TC03_verifyBrand_field()'><b>TC03_verifyBrand_field</b><br>Test class: com.api.PropertiesTC.GET_03_Brands_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_03_Brands_List@942a29c</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC02_verifyProduct_field()'><b>TC02_verifyProduct_field</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC04_verifyProduct_name()'><b>TC04_verifyProduct_name</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_05_valid_SearchProduct.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.POST_05_valid_SearchProduct</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_11_createAccount.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.POST_11_createAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_11_createAccount@5e600dd5</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_03_Brands_List.TC02_verifyBrand_ID()'><b>TC02_verifyBrand_ID</b><br>Test class: com.api.PropertiesTC.GET_03_Brands_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_03_Brands_List@942a29c</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_14_detailAccount.TC03_matchingNameField()'><b>TC03_matchingNameField</b><br>Test class: com.api.PropertiesTC.GET_14_detailAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_14_detailAccount@5d534f5d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC07_verifyProduct_category()'><b>TC07_verifyProduct_category</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_02_to_Product_List.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.POST_02_to_Product_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_02_to_Product_List@3527942a</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_05_valid_SearchProduct.TC03_countProduct_Name()'><b>TC03_countProduct_Name</b><br>Test class: com.api.PropertiesTC.POST_05_valid_SearchProduct</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.DEL_09_valid_VerifyLogin.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.DEL_09_valid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_10_invalid_VerifyLogin.TC03_verifyMessageField()'><b>TC03_verifyMessageField</b><br>Test class: com.api.PropertiesTC.POST_10_invalid_VerifyLogin</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_11_createAccount.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.POST_11_createAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_11_createAccount@5e600dd5</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_14_detailAccount.TC06_verifyMainInfo()'><b>TC06_verifyMainInfo</b><br>Test class: com.api.PropertiesTC.GET_14_detailAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_14_detailAccount@5d534f5d</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.POST_06_invalid_SearchProduct.TC02_verifyResponseCode()'><b>TC02_verifyResponseCode</b><br>Test class: com.api.PropertiesTC.POST_06_invalid_SearchProduct</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.PUT_13_updateAccount.TC03_verifyMessage()'><b>TC03_verifyMessage</b><br>Test class: com.api.PropertiesTC.PUT_13_updateAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.PUT_13_updateAccount@576d5deb</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_01_Products_List.TC03_verifyProduct_ID()'><b>TC03_verifyProduct_ID</b><br>Test class: com.api.PropertiesTC.GET_01_Products_List</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_01_Products_List@53aac487</td></tr>
+<tr>
+<td title='com.api.PropertiesTC.GET_14_detailAccount.TC01_verifyStatusCode()'><b>TC01_verifyStatusCode</b><br>Test class: com.api.PropertiesTC.GET_14_detailAccount</td>
+<td></td>
+<td>0</td>
+<td>com.api.PropertiesTC.GET_14_detailAccount@5d534f5d</td></tr>
+</table><p>
+</body>
+</html>
