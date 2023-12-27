@@ -1,0 +1,6 @@
+## Practise API automation testing with Rest Assured in Eclipse tool:
+
+- Create Maven project with support libraries: TestNG, Rest Assured, Hamcrest, jackson-databind
+- Create basic architecture for project: package, folder, properties file.v.v..
+- Create API testcases with Rest Assured
+- Executing testcases with TestNG to get actual results.

@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="49" passed="42" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-22T14:02:20 ICT" name="Suite" finished-at="2023-12-22T14:02:36 ICT" duration-ms="16568">
+    <groups>
+    </groups>
+    <test started-at="2023-12-22T14:02:20 ICT" name="Test" finished-at="2023-12-22T14:02:36 ICT" duration-ms="16568">
+      <class name="com.api.PropertiesTC.GET_03_Brands_List">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.GET_03_Brands_List@942a29c]" started-at="2023-12-22T14:02:25 ICT" name="openRequest" finished-at="2023-12-22T14:02:25 ICT" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:1, instance:com.api.PropertiesTC.GET_03_Brands_List@942a29c]" started-at="2023-12-22T14:02:25 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:25 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyBrand_ID()[pri:2, instance:com.api.PropertiesTC.GET_03_Brands_List@942a29c]" started-at="2023-12-22T14:02:25 ICT" name="TC02_verifyBrand_ID" finished-at="2023-12-22T14:02:25 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyBrand_ID -->
+        <test-method signature="TC03_verifyBrand_field()[pri:3, instance:com.api.PropertiesTC.GET_03_Brands_List@942a29c]" started-at="2023-12-22T14:02:25 ICT" name="TC03_verifyBrand_field" finished-at="2023-12-22T14:02:25 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyBrand_field -->
+        <test-method is-config="true" signature="closeRequest()[pri:0, instance:com.api.PropertiesTC.GET_03_Brands_List@942a29c]" started-at="2023-12-22T14:02:25 ICT" name="closeRequest" finished-at="2023-12-22T14:02:25 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeRequest -->
+      </class> <!-- com.api.PropertiesTC.GET_03_Brands_List -->
+      <class name="com.api.PropertiesTC.GET_14_detailAccount">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:34 ICT" name="openRequest" finished-at="2023-12-22T14:02:35 ICT" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:35 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:35 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:35 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:35 ICT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_matchingNameField()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:35 ICT" name="TC03_matchingNameField" finished-at="2023-12-22T14:02:35 ICT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_matchingNameField -->
+        <test-method signature="TC04_matchingPassField()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:35 ICT" name="TC04_matchingPassField" finished-at="2023-12-22T14:02:35 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_matchingPassField -->
+        <test-method signature="TC05_matchingEmailField()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:35 ICT" name="TC05_matchingEmailField" finished-at="2023-12-22T14:02:35 ICT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_matchingEmailField -->
+        <test-method signature="TC06_verifyMainInfo()[pri:0, instance:com.api.PropertiesTC.GET_14_detailAccount@5d534f5d]" started-at="2023-12-22T14:02:35 ICT" name="TC06_verifyMainInfo" finished-at="2023-12-22T14:02:35 ICT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_verifyMainInfo -->
+      </class> <!-- com.api.PropertiesTC.GET_14_detailAccount -->
+      <class name="com.api.PropertiesTC.POST_08_invalid_VerifyLogin">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d]" started-at="2023-12-22T14:02:29 ICT" name="openRequest" finished-at="2023-12-22T14:02:30 ICT" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d]" started-at="2023-12-22T14:02:30 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:30 ICT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 400: FAILED expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 400: FAILED expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.POST_08_invalid_VerifyLogin.TC01_verifyStatusCode(POST_08_invalid_VerifyLogin.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d]" started-at="2023-12-22T14:02:30 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:30 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:0, instance:com.api.PropertiesTC.POST_08_invalid_VerifyLogin@60bd273d]" started-at="2023-12-22T14:02:30 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:30 ICT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.POST_08_invalid_VerifyLogin -->
+      <class name="com.api.PropertiesTC.POST_05_valid_SearchProduct">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e]" started-at="2023-12-22T14:02:26 ICT" name="openRequest" finished-at="2023-12-22T14:02:27 ICT" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e]" started-at="2023-12-22T14:02:27 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_validProduct_Name()[pri:0, instance:com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e]" started-at="2023-12-22T14:02:27 ICT" name="TC02_validProduct_Name" finished-at="2023-12-22T14:02:27 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_validProduct_Name -->
+        <test-method signature="TC03_countProduct_Name()[pri:0, instance:com.api.PropertiesTC.POST_05_valid_SearchProduct@5a45133e]" started-at="2023-12-22T14:02:27 ICT" name="TC03_countProduct_Name" finished-at="2023-12-22T14:02:27 ICT" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_countProduct_Name -->
+      </class> <!-- com.api.PropertiesTC.POST_05_valid_SearchProduct -->
+      <class name="com.api.PropertiesTC.PUT_13_updateAccount">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.PUT_13_updateAccount@576d5deb]" started-at="2023-12-22T14:02:34 ICT" name="openRequest" finished-at="2023-12-22T14:02:34 ICT" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.PUT_13_updateAccount@576d5deb]" started-at="2023-12-22T14:02:34 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:34 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.PUT_13_updateAccount@576d5deb]" started-at="2023-12-22T14:02:34 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:34 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:0, instance:com.api.PropertiesTC.PUT_13_updateAccount@576d5deb]" started-at="2023-12-22T14:02:34 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:34 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.PUT_13_updateAccount -->
+      <class name="com.api.PropertiesTC.POST_07_valid_VerifyLogin">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f]" started-at="2023-12-22T14:02:28 ICT" name="openRequest" finished-at="2023-12-22T14:02:29 ICT" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f]" started-at="2023-12-22T14:02:29 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:29 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f]" started-at="2023-12-22T14:02:29 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:29 ICT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessageField()[pri:0, instance:com.api.PropertiesTC.POST_07_valid_VerifyLogin@4f80542f]" started-at="2023-12-22T14:02:29 ICT" name="TC03_verifyMessageField" finished-at="2023-12-22T14:02:29 ICT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessageField -->
+      </class> <!-- com.api.PropertiesTC.POST_07_valid_VerifyLogin -->
+      <class name="com.api.PropertiesTC.POST_06_invalid_SearchProduct">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98]" started-at="2023-12-22T14:02:27 ICT" name="openRequest" finished-at="2023-12-22T14:02:28 ICT" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98]" started-at="2023-12-22T14:02:28 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:28 ICT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 400: FAILED expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 400: FAILED expected [200] but found [400]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.POST_06_invalid_SearchProduct.TC01_verifyStatusCode(POST_06_invalid_SearchProduct.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98]" started-at="2023-12-22T14:02:28 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:28 ICT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:0, instance:com.api.PropertiesTC.POST_06_invalid_SearchProduct@534a5a98]" started-at="2023-12-22T14:02:28 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:28 ICT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.POST_06_invalid_SearchProduct -->
+      <class name="com.api.PropertiesTC.POST_11_createAccount">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_11_createAccount@5e600dd5]" started-at="2023-12-22T14:02:33 ICT" name="openRequest" finished-at="2023-12-22T14:02:34 ICT" duration-ms="867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.POST_11_createAccount@5e600dd5]" started-at="2023-12-22T14:02:34 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:34 ICT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 201 Created: FAILED expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 201 Created: FAILED expected [200] but found [201]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.POST_11_createAccount.TC01_verifyStatusCode(POST_11_createAccount.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.POST_11_createAccount@5e600dd5]" started-at="2023-12-22T14:02:34 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:34 ICT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:0, instance:com.api.PropertiesTC.POST_11_createAccount@5e600dd5]" started-at="2023-12-22T14:02:34 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:34 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.POST_11_createAccount -->
+      <class name="com.api.PropertiesTC.POST_02_to_Product_List">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_02_to_Product_List@3527942a]" started-at="2023-12-22T14:02:23 ICT" name="openRequest" finished-at="2023-12-22T14:02:25 ICT" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:1, instance:com.api.PropertiesTC.POST_02_to_Product_List@3527942a]" started-at="2023-12-22T14:02:25 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:25 ICT" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 405 Method Not Allowed: FAILED! expected [200] but found [405]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 405 Method Not Allowed: FAILED! expected [200] but found [405]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.POST_02_to_Product_List.TC01_verifyStatusCode(POST_02_to_Product_List.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:2, instance:com.api.PropertiesTC.POST_02_to_Product_List@3527942a]" started-at="2023-12-22T14:02:25 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:25 ICT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:3, instance:com.api.PropertiesTC.POST_02_to_Product_List@3527942a]" started-at="2023-12-22T14:02:25 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:25 ICT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.POST_02_to_Product_List -->
+      <class name="com.api.PropertiesTC.DEL_12_deleteUser">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea]" started-at="2023-12-22T14:02:35 ICT" name="openRequest" finished-at="2023-12-22T14:02:36 ICT" duration-ms="832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea]" started-at="2023-12-22T14:02:36 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:36 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea]" started-at="2023-12-22T14:02:36 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:36 ICT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:0, instance:com.api.PropertiesTC.DEL_12_deleteUser@2e3967ea]" started-at="2023-12-22T14:02:36 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:36 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.DEL_12_deleteUser -->
+      <class name="com.api.PropertiesTC.PUT_04_to_Brands_List">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a]" started-at="2023-12-22T14:02:25 ICT" name="openRequest" finished-at="2023-12-22T14:02:26 ICT" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a]" started-at="2023-12-22T14:02:26 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:26 ICT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 405 Method NOT Allowed: FAILED expected [200] but found [405]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 405 Method NOT Allowed: FAILED expected [200] but found [405]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.PUT_04_to_Brands_List.TC01_verifyStatusCode(PUT_04_to_Brands_List.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a]" started-at="2023-12-22T14:02:26 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:26 ICT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessageField()[pri:0, instance:com.api.PropertiesTC.PUT_04_to_Brands_List@1ed6388a]" started-at="2023-12-22T14:02:26 ICT" name="TC03_verifyMessageField" finished-at="2023-12-22T14:02:26 ICT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessageField -->
+      </class> <!-- com.api.PropertiesTC.PUT_04_to_Brands_List -->
+      <class name="com.api.PropertiesTC.DEL_09_valid_VerifyLogin">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7]" started-at="2023-12-22T14:02:30 ICT" name="openRequest" finished-at="2023-12-22T14:02:32 ICT" duration-ms="1965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7]" started-at="2023-12-22T14:02:32 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:32 ICT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 405: FAILED expected [200] but found [405]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 405: FAILED expected [200] but found [405]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.DEL_09_valid_VerifyLogin.TC01_verifyStatusCode(DEL_09_valid_VerifyLogin.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7]" started-at="2023-12-22T14:02:32 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:32 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessage()[pri:0, instance:com.api.PropertiesTC.DEL_09_valid_VerifyLogin@121314f7]" started-at="2023-12-22T14:02:32 ICT" name="TC03_verifyMessage" finished-at="2023-12-22T14:02:32 ICT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessage -->
+      </class> <!-- com.api.PropertiesTC.DEL_09_valid_VerifyLogin -->
+      <class name="com.api.PropertiesTC.GET_01_Products_List">
+        <test-method is-config="true" signature="openProductList()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:20 ICT" name="openProductList" finished-at="2023-12-22T14:02:23 ICT" duration-ms="3658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductList -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:23 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyProduct_field()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC02_verifyProduct_field" finished-at="2023-12-22T14:02:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyProduct_field -->
+        <test-method signature="TC03_verifyProduct_ID()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC03_verifyProduct_ID" finished-at="2023-12-22T14:02:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyProduct_ID -->
+        <test-method signature="TC04_verifyProduct_name()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC04_verifyProduct_name" finished-at="2023-12-22T14:02:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_verifyProduct_name -->
+        <test-method signature="TC05_verifyProduct_price()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC05_verifyProduct_price" finished-at="2023-12-22T14:02:23 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_verifyProduct_price -->
+        <test-method signature="TC06_verifyProduct_brand()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC06_verifyProduct_brand" finished-at="2023-12-22T14:02:23 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_verifyProduct_brand -->
+        <test-method signature="TC07_verifyProduct_category()[pri:0, instance:com.api.PropertiesTC.GET_01_Products_List@53aac487]" started-at="2023-12-22T14:02:23 ICT" name="TC07_verifyProduct_category" finished-at="2023-12-22T14:02:23 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_verifyProduct_category -->
+      </class> <!-- com.api.PropertiesTC.GET_01_Products_List -->
+      <class name="com.api.PropertiesTC.POST_10_invalid_VerifyLogin">
+        <test-method is-config="true" signature="openRequest()[pri:0, instance:com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7]" started-at="2023-12-22T14:02:32 ICT" name="openRequest" finished-at="2023-12-22T14:02:33 ICT" duration-ms="823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openRequest -->
+        <test-method signature="TC01_verifyStatusCode()[pri:0, instance:com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7]" started-at="2023-12-22T14:02:33 ICT" name="TC01_verifyStatusCode" finished-at="2023-12-22T14:02:33 ICT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[valid StatusCode 404: FAILED expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: valid StatusCode 404: FAILED expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at com.api.PropertiesTC.POST_10_invalid_VerifyLogin.TC01_verifyStatusCode(POST_10_invalid_VerifyLogin.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_verifyStatusCode -->
+        <test-method signature="TC02_verifyResponseCode()[pri:0, instance:com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7]" started-at="2023-12-22T14:02:33 ICT" name="TC02_verifyResponseCode" finished-at="2023-12-22T14:02:33 ICT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_verifyResponseCode -->
+        <test-method signature="TC03_verifyMessageField()[pri:0, instance:com.api.PropertiesTC.POST_10_invalid_VerifyLogin@130c12b7]" started-at="2023-12-22T14:02:33 ICT" name="TC03_verifyMessageField" finished-at="2023-12-22T14:02:33 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_verifyMessageField -->
+      </class> <!-- com.api.PropertiesTC.POST_10_invalid_VerifyLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
